@@ -1,17 +1,18 @@
-using Vintagestory.API.Common;
-using HarmonyLib;
 using System.Text;
+using HarmonyLib;
+using Vintagestory.API.Common;
 
 namespace HelveHammerExtensions
 {
     public class VanillaPatches : ModSystem
     {
-        public const string patchCode = "DArkHekRoMaNT.HelveHammerExtensions.VanillaPatches";
-        public Harmony harmonyInstance = new(patchCode);
+        private Harmony? harmonyInstance;
 
         public override void Start(ICoreAPI api)
         {
+            harmonyInstance = new Harmony(Mod.Info.ModID);
             harmonyInstance.PatchAll();
+
             var builder = new StringBuilder("Harmony Patched Methods: ");
             foreach (var val in harmonyInstance.GetPatchedMethods())
             {
@@ -22,7 +23,7 @@ namespace HelveHammerExtensions
 
         public override void Dispose()
         {
-            harmonyInstance.UnpatchAll(patchCode);
+            harmonyInstance?.UnpatchAll(Mod.Info.ModID);
         }
     }
 }

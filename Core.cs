@@ -1,16 +1,26 @@
-using CommonLib.Config;
+using System;
 using Vintagestory.API.Common;
 
 namespace HelveHammerExtensions
 {
     public class Core : ModSystem
     {
-        public static Config Config { get; private set; } = null!;
+        public static Config Config { get; private set; } = new Config();
 
         public override void Start(ICoreAPI api)
         {
-            var configs = api.ModLoader.GetModSystem<ConfigManager>();
-            Config = configs.GetConfig<Config>();
+            Config? loaded = null;
+            try
+            {
+                loaded = api.LoadModConfig<Config>("helvehammerext.json");
+            }
+            catch (Exception ex)
+            {
+                Mod.Logger.Warning("Could not read helvehammerext.json ({0}); resetting to defaults.", ex.Message);
+            }
+
+            Config = loaded ?? new Config();
+            api.StoreModConfig(Config, "helvehammerext.json");
         }
     }
 }

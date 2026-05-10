@@ -1,0 +1,32 @@
+[
+  {
+    "file": "game:itemtypes/resource/metalchain.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "value": { "helvehammerworkable": true }
+  },
+  {
+    "file": "game:itemtypes/resource/metallamellae.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "value": { "helvehammerworkable": true }
+  },
+  {
+    "file": "game:itemtypes/resource/metalscale.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "value": { "helvehammerworkable": true }
+  },
+  {
+    "file": "game:itemtypes/resource/chutesection.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "value": { "helvehammerworkable": true }
+  },
+  {
+    "file": "game:itemtypes/resource/metalnailsandstrips.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "value": { "helvehammerworkable": true }
+  }
+]

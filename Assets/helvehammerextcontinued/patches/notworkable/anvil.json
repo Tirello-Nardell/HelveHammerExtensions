@@ -1,0 +1,8 @@
+[
+  {
+    "file": "game:blocktypes/metal/anvilpart.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "value": { "helvehammerworkable": false }
+  }
+]

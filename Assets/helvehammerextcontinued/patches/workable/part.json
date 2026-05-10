@@ -1,0 +1,14 @@
+[
+  {
+    "file": "game:itemtypes/part/helvehammerhead.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "value": { "helvehammerworkable": true }
+  },
+  {
+    "file": "game:itemtypes/part/poundercap.json",
+    "op": "addmerge",
+    "path": "/attributes",
+    "value": { "helvehammerworkable": true }
+  }
+]
