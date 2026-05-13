@@ -1,7 +1,9 @@
 # Helve Hammer Extensions (Continued)
 
-A server-side Vintage Story mod that lets the helve hammer auto-forge most things,
-not just the small handful of items vanilla allows.
+A Vintage Story mod that lets the helve hammer auto-forge most things,
+not just the small handful of items vanilla allows. Works in single-player and
+on dedicated servers; in multiplayer both the server and connecting clients
+need the mod installed.
 
 - **ModDB page:** *(pending — fork is being prepared for upload)*
 - **Original mod page:** https://mods.vintagestory.at/helvehammerext
