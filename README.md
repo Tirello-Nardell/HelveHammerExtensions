@@ -5,7 +5,7 @@ not just the small handful of items vanilla allows. Works in single-player and
 on dedicated servers; in multiplayer both the server and connecting clients
 need the mod installed.
 
-- **ModDB page:** *(pending — fork is being prepared for upload)*
+- **ModDB page:** https://mods.vintagestory.at/helvehammerextcontinued
 - **Original mod page:** https://mods.vintagestory.at/helvehammerext
 - **Forum thread:** https://www.vintagestory.at/forums/topic/3916-helve-hammer-extensions/
 
